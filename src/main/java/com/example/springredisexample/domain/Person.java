@@ -9,11 +9,10 @@ import java.io.Serializable;
 
 @Data
 @Builder
-@RedisHash("Glober")
-public class Glober implements Serializable {
+@RedisHash("Person")
+public class Person implements Serializable {
     @Id
     private String id;
     private String fullName;
-    private String project;
-    private String studio;
+    private String address;
 }
